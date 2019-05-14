@@ -83,3 +83,16 @@ total_alcohol = alcohol_consumption.sum()
 average_alcohol = alcohol_consumption.mean()
 print(total_alcohol)
 print(average_alcohol)
+
+print('===============================5')
+
+world_alcohol = numpy.genfromtxt("world_alcohol.txt", delimiter=",", dtype="U75", skip_header=1)
+print(world_alcohol)
+uruguay_other_1986 = world_alcohol[1,4]
+third_country = world_alcohol[2,2]
+print (uruguay_other_1986)
+print (third_country)
+
+print("===============================6")
+vector = numpy.array([5, 10, 15, 20])
+print(vector[0:3])
